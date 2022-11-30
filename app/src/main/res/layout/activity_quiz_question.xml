@@ -1,0 +1,120 @@
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What country does this flag belong to?"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/image_question"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flag_of_argentina"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="1"
+            android:max="10"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_progress_question"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_optionOne"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_marginBottom="22dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_optionTwo"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_marginBottom="22dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_optionThree"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_marginBottom="22dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_optionFour"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/default_option_border_bg"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginHorizontal="30dp"
+        android:height="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
